@@ -1,0 +1,62 @@
+html{
+font-family: 'Courier New', Courier, monospace;
+}
+header{
+    text-align: center;
+    min-width: 100%;
+    position: relative;
+    left: 0;
+}
+#container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    background-color: azure;
+    width: 100%;
+}
+div{
+    background-color: aliceblue;
+    width: auto;
+}
+aside{
+    background-color: antiquewhite;
+    display: flex;
+    padding: 0.3em;
+    border-radius: 8px;
+    max-width: 30%;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: center;
+}
+#description, #steps{
+    outline: black 1px solid;
+    padding: 1em;
+    margin: 0.4em;
+    border-radius: 8px;
+    flex-grow: 2;
+    height: 30em;
+    width: 63%;
+
+}
+#container {
+    flex-grow: 2;
+}
+
+.ingCat {
+    outline: black 1px solid;
+    border-radius: 8px;
+    padding: 0.4em;
+    margin: 1em;
+}
+ul{
+    list-style:none;
+}
+img{
+    max-width: 30%;
+    height: 32em;
+    object-fit: cover;
+    border-radius: 18px;
+    flex-grow: 1;
+}
