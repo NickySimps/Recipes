@@ -10,9 +10,10 @@ header{
 #container{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: azure;
     width: 100%;
+    flex-grow: 2;
 }
 div{
     background-color: aliceblue;
@@ -23,7 +24,7 @@ aside{
     display: flex;
     padding: 0.3em;
     border-radius: 8px;
-    max-width: 30%;
+    max-width: 24%;
     flex-grow: 1;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -40,23 +41,81 @@ aside{
     width: 63%;
 
 }
-#container {
-    flex-grow: 2;
-}
-
 .ingCat {
     outline: black 1px solid;
     border-radius: 8px;
     padding: 0.4em;
     margin: 1em;
+    display: block;
 }
+#homeBtn {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 3em;
+    font-weight: 500;
+    outline: black 1px solid;
+    background: whitesmoke;
+
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+figcaption{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 3em;
+    font-weight: 500;
+    outline: black 1px solid;
+    background: whitesmoke;
+    
+}
+figure{
+    text-decoration:none ;
+}
+#homeBtn:hover {
+    transition: all 2s;
+    color: pink;
+    background: linear-gradient(to top right, rgb(255, 160, 215), rgb(179, 255, 247), rgb(255, 243, 221));
+    outline: pink 2px solid;
+
+}
+#home{
+    width: 100%;
+    padding: 2em;
+}
+
 ul{
     list-style:none;
 }
 img{
-    max-width: 30%;
+    max-width: 25%;
     height: 32em;
     object-fit: cover;
     border-radius: 18px;
     flex-grow: 1;
+}
+/* Media Queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media only screen  and (max-width: 480px) {
+    img,aside{
+        max-width: 95%;
+    }
+    body{
+        background-color: gainsboro;
+    }
+
+    .ingCat ul{
+        display: inline-block;
+    }
+    .ingCat ul li{
+        display: none;
+    }
+    .ingCat:hover ul:hover li, .ingCat:hover ul li {
+        display: block;
+        transition:all 1.5s
+    }
 }
