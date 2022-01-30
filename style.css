@@ -111,7 +111,7 @@ img{
     width: fit-content;
     transform: scale(20%);
 }
-}
+
 /* Media Queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 @media only screen and (max-width: 480px) {
