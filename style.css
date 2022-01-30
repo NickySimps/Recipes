@@ -26,12 +26,12 @@ aside{
     padding: 0.3em;
     border-radius: 8px;
     max-width: 95%;
-    height: fit-content;
+    height:fit-content;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    margin: 2em;
-    align-content: space-around;
+    margin-top: 1em;
     
 }
 #description, #steps{
@@ -40,7 +40,7 @@ aside{
     margin: 2em;
     border-radius: 8px;
     width: 90%;
-    height: 85%;
+    height: 90%;
 
 }
 .ingCat {
@@ -76,7 +76,7 @@ figcaption{
     background: whitesmoke;
     
 }
-figure, a{
+figure{
     text-decoration:none ;
     width: 30%;
 
@@ -98,10 +98,9 @@ ul{
 }
 img{
     max-width: 95%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
     border-radius: 18px;
-    margin: 2em;
 }
 #newRecipeBtn {
     outline: black solid 2px;
