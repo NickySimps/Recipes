@@ -79,6 +79,9 @@ figcaption{
 figure, a{
     text-decoration:none ;
     width: 30%;
+    background-color: rgb(255, 230, 233);
+    width: 70%;
+    
 
 }
 #homeBtn:hover {
