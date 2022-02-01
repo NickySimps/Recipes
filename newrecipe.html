@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
     <title>Enter a New Recipe</title>
 </head>
+
 <body>
-    <h1>So you think you can cook?</h1>
-    <form action="get">
-        <input type="text" name="recipeName" id="recipeName">
-    </form>
+    <div id="formWrapper">
+        <h1>So you think you can cook?</h1>
+        <form id="newRecipeForm" action="newrecipe.html" method="get">
+            <label for="recipeName">What is the recipe name?</label>
+            <input type="text" name="recipeName" id="recipeName" form="newRecipeForm" required
+                placeholder="Skinny Jeffrey's Tummy Tickler...">
+            <label for="recipeDescription">Describe the recipe</label>
+            <textarea name="recipeDescription" id="recipeDescription" form="newRecipeForm" required
+                placeholder="My grammy's favorite marmalade..." cols="30" rows="10"></textarea>
+            <label for="ingCats"> Ingredient Categories?</label>
+            <select name="ingCats" id="ingCatsSelect" multiple form="newRecipeForm" required>
+                <option value="Meat">Meat</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Spices">Spices</option>
+                <option value="Wet">Wet</option>
+                <option value="Dry">Dry</option>
+                <option value="Fruit">Fruit</option>
+                <option value="Imported">Imported</option>
+            </select>
+            <input id="submitBtn" type="submit" form="newRecipeForm" formaction="newrecipe.html" formmethod="get">
+        </form>
+        <button type="button" onclick="addRecipeCat">Add Ingredients?</button>
+
+    </div>
+    <div id="recipeCategory"></div>
+    <div id="home">
+        <a id="homeBtn" href="/index.html">HOME</a>
+    </div>
+
 </body>
+
 </html>
